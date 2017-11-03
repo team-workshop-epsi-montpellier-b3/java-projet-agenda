@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication1;
+package javafxapplication1.entity;
+
+import java.util.Date;
 
 /**
  *
@@ -13,6 +15,7 @@ public class Comment {
     private int id;
     private int idEvent;
     private String comment;
+    private Date date;
     
     public Comment() {
         

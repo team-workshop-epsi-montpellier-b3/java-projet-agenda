@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication1;
+package javafxapplication1.entity;
 
 import java.util.List;
 
@@ -15,18 +15,28 @@ public class User {
     
     private int id;
     private String login;
+    private String password;
     private String name;
     private String firstName;
     private List<Event> events;
     
-    public User(int id, String u, String n, String f, List<Event> es)
+    public User(int id, String l, String p, String n, String f, List<Event> es)
     {
-        this.login = u;
+        this.login = l;
+        this.password = p;
         this.name = n;
         this.firstName = f;
         this.events = es;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
     public int getId() {
         return id;
     }

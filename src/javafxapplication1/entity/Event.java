@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication1;
+package javafxapplication1.entity;
 
 import java.util.Date;
 import java.util.List;
@@ -18,8 +18,9 @@ public class Event {
     private int idUser;
     private String title;
     private String description;
-    private Date dateDebut;
-    private Date dateFin;
+    private Date dateStart;
+    private Date dateEnd;
+    private Date dateCreate;
     private List<Comment> comments;
     
     public Event(int id, int idUser, String title, String description, Date dateDebut, Date dateFin) 
@@ -28,8 +29,8 @@ public class Event {
         this.idUser = idUser;
         this.title = title;
         this.description = description;
-        this.dateDebut = dateDebut;
-        this.dateFin = dateFin; 
+        this.dateStart = dateDebut;
+        this.dateEnd = dateFin; 
     }
 
     public int getId() {
@@ -64,21 +65,38 @@ public class Event {
         this.description = description;
     }
 
-    public Date getDateDebut() {
-        return dateDebut;
+    public Date getDateStart() {
+        return dateStart;
     }
 
-    public void setDateDebut(Date dateDebut) {
-        this.dateDebut = dateDebut;
+    public void setDateStart(Date dateStart) {
+        this.dateStart = dateStart;
     }
 
-    public Date getDateFin() {
-        return dateFin;
+    public Date getDateEnd() {
+        return dateEnd;
     }
 
-    public void setDateFin(Date dateFin) {
-        this.dateFin = dateFin;
+    public void setDateEnd(Date dateEnd) {
+        this.dateEnd = dateEnd;
     }
-    
+
+    public Date getDateCreate() {
+        return dateCreate;
+    }
+
+    public void setDateCreate(Date dateCreate) {
+        this.dateCreate = dateCreate;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+   
     
 }
