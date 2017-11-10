@@ -6,7 +6,6 @@
 package javafxapplication1;
 
 import java.io.IOException;
-import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -18,6 +17,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import Dao.ConnecteurBdd;
+
 
 /**
  *
@@ -27,7 +28,7 @@ public class JavaFXApplication1 extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        
+
         Parent root;   
         try {
             root = FXMLLoader.load(getClass().getResource("/Views/FXMLDoc.fxml"));
@@ -38,7 +39,6 @@ public class JavaFXApplication1 extends Application {
         } catch (IOException e) {
             Logger.getLogger(JavaFXApplication1.class.getName()).log(Level.SEVERE, null, e);
         }
-  
     }
 
     /**
