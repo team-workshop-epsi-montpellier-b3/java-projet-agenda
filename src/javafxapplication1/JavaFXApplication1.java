@@ -5,9 +5,15 @@
  */
 package javafxapplication1;
 
+import java.io.IOException;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
@@ -20,29 +26,19 @@ import javafx.stage.Stage;
 public class JavaFXApplication1 extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
         
-        //User user = new User("Guigui", "LANGOUET", "Guillaume");
-        //Event event = new Event("4heures de maths", "MR BLABLA, CLASSE 200 Bâtiment 7");
-        
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
-        
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-        
-        Scene scene = new Scene(root, 700, 500);
-        
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Parent root;   
+        try {
+            root = FXMLLoader.load(getClass().getResource("/Views/FXMLDoc.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setTitle("Hello World!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            Logger.getLogger(JavaFXApplication1.class.getName()).log(Level.SEVERE, null, e);
+        }
+  
     }
 
     /**

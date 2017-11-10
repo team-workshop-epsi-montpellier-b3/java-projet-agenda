@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication1.dao;
+package Dao;
 
+import Entity.Event;
+import Entity.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import javafxapplication1.entity.Event;
-import javafxapplication1.entity.User;
 
 /**
  *
