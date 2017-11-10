@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javafxapplication1.dao;
+package Dao;
 
 
 import com.mysql.jdbc.Statement;
+//import com.mysql.jdbc.Connection;
+
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;

@@ -17,7 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import javafxapplication1.dao.ConnecteurBdd;
+import Dao.ConnecteurBdd;
 
 
 /**
@@ -27,46 +27,18 @@ import javafxapplication1.dao.ConnecteurBdd;
 public class JavaFXApplication1 extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
-        
-        //User user = new User("Guigui", "LANGOUET", "Guillaume");
-        //Event event = new Event("4heures de maths", "MR BLABLA, CLASSE 200 Bâtiment 7");
-//        ConnecteurBdd aa = new ConnecteurBdd();
-//        Button btn = new Button();
-//        btn.setText("Say 'Hello World'");
-//        btn.setOnAction(new EventHandler<ActionEvent>() {
-//            
-//            @Override
-//            public void handle(ActionEvent event) {
-//                System.out.println("Hello World!");
-//            }
-//        });
-//        
-//        StackPane root = new StackPane();
-//        root.getChildren().add(btn);
-//        
-//        Scene scene = new Scene(root, 700, 500);
-//        
-//        primaryStage.setTitle("Hello World!");
-//        primaryStage.setScene(scene);
-//        primaryStage.show();
+    public void start(Stage primaryStage) throws IOException {
 
-Parent root;
+        Parent root;   
         try {
-            root = FXMLLoader.load(getClass().getResource("/views/FXMLDocument.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/views/FXMLDoc.fxml"));
             Scene scene = new Scene(root);
-        
-       
-//        DatabaseConnection.creerTables();
-        
-                
-                
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        } catch (IOException ex) {
-            Logger.getLogger(JavaFXApplication1.class.getName()).log(Level.SEVERE, null, ex);
+            primaryStage.setTitle("Hello World!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            Logger.getLogger(JavaFXApplication1.class.getName()).log(Level.SEVERE, null, e);
         }
-        
     }
 
     /**
