@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafxapplication1.dao.ConnecteurBdd;
 
 /**
  *
@@ -24,7 +25,7 @@ public class JavaFXApplication1 extends Application {
         
         //User user = new User("Guigui", "LANGOUET", "Guillaume");
         //Event event = new Event("4heures de maths", "MR BLABLA, CLASSE 200 Bâtiment 7");
-        
+        ConnecteurBdd aa = new ConnecteurBdd();
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {

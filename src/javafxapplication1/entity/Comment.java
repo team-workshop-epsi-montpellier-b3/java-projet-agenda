@@ -13,6 +13,7 @@ import java.util.Date;
  */
 public class Comment {
     private int id;
+    private int idUser;
     private int idEvent;
     private String comment;
     private Date date;
@@ -43,6 +44,20 @@ public class Comment {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    /**
+     * @return the idUser
+     */
+    public int getIdUser() {
+        return idUser;
+    }
+
+    /**
+     * @param idUser the idUser to set
+     */
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
     
     
