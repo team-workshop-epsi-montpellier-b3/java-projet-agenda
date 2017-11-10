@@ -31,7 +31,7 @@ public class JavaFXApplication1 extends Application {
 
         Parent root;   
         try {
-            root = FXMLLoader.load(getClass().getResource("/views/FXMLDoc.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/Views/FXMLDoc.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setTitle("Hello World!");
             primaryStage.setScene(scene);
