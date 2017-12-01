@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/Guillaume/NetBeansProjects/java-projet-agenda/src/javafxapplication1/dao/UserDao.java</file>
-            <file>file:/Users/Guillaume/NetBeansProjects/java-projet-agenda/src/javafxapplication1/dao/EventDao.java</file>
-            <file>file:/Users/Guillaume/NetBeansProjects/java-projet-agenda/src/javafxapplication1/dao/ConnecteurBdd.java</file>
-            <file>file:/Users/Guillaume/NetBeansProjects/java-projet-agenda/src/javafxapplication1/entity/User.java</file>
-            <file>file:/Users/Guillaume/NetBeansProjects/java-projet-agenda/src/javafxapplication1/entity/Event.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Controller/FXMLDocController.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Views/CreateUser.fxml</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Dao/ConnecteurBdd.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Dao/CreateTables.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Views/FXMLDoc.fxml</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Dao/EventDao.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/javafxapplication1/JavaFXApplication1.java</file>
+            <file>file:/C:/Users/maxim/Documents/java-projet-agenda-master/java-projet-agenda/src/Views/LogIn.fxml</file>
         </group>
     </open-files>
 </project-private>
