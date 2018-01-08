@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="testfxml.FXMLDocumentController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+    <Text text="Welcome" id="title-text"
+        GridPane.columnIndex="0" GridPane.rowIndex="0"
+        GridPane.columnSpan="2"/>
+ 
+    <!--- User Name Zone-->
+    <Label text="User Name:"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <!---               -->
+    <!--- User Name Zone -->
+    <Label text="Password:"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+ 
+    <PasswordField fx:id="passwordField" 
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <!---               -->   
+    <!--- Sign in button        _____________________________________________-->
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button text="Sign In"     
+        onAction="#buttonActionStartRegister"/>
+    </HBox>
+     <!---               -->
+    <!--- Creat a account button ____________________________________________-->
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button text="Creat a account"     
+        onAction="#buttonActionStartRegister"/>
+    </HBox>
+     <!---               -->
+
+    <Text fx:id="actiontarget"
+           GridPane.columnIndex="0" GridPane.columnSpan="2"
+     GridPane.halignment="RIGHT" GridPane.rowIndex="6"/>
+    
+    <stylesheets>
+        <URL value="@Login.css" />
+    </stylesheets>
+
+</GridPane>
