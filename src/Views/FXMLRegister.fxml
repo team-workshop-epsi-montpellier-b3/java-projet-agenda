@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="testfxml.FXMLDocumentController" 
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+    <Text text="Registe" id="title-text"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"
+           GridPane.columnSpan="2"/>
+    <!--- User Name Zone ____________________________________________________-->
+    <Label text="User Name:"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <!---               -->
+    <!--- Surname Zone   ____________________________________________________-->
+    <Label text="Surname:"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <!---               -->
+    <!--- Name Zone      ____________________________________________________-->
+    <Label text="Name:"
+        GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <!---               -->
+    <!--- Email Zone     ____________________________________________________-->
+     <Label text="Email:"
+        GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <!---               -->
+    <!--- Password Zone  ____________________________________________________-->
+     <Label text="Password:"
+        GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <!---               -->
+    <!--- Confirm Password Zone _____________________________________________-->
+     <Label text="Confirm password:"
+        GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+ 
+    <TextField 
+        GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <!---               -->
+    
+    <!--- Cancel button         _____________________________________________-->
+    <HBox spacing="10" alignment="bottom_left" 
+        GridPane.columnIndex="0" GridPane.rowIndex="7">
+        <Button text="Cancel"     
+        onAction="#buttonActionReturnToStart"/>
+    </HBox>
+    <!---               -->
+
+    <!--- Confirm button        _____________________________________________-->
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <Button text="Confirm"     
+        onAction="#buttonActionStartRegister"/>
+    </HBox>
+    <!---               -->
+    
+    <Text fx:id="actiontarget"
+           GridPane.columnIndex="0" GridPane.columnSpan="2"
+     GridPane.halignment="RIGHT" GridPane.rowIndex="6"/>
+    
+    <stylesheets>
+        <URL value="@Login.css" />
+    </stylesheets>
+
+</GridPane>
